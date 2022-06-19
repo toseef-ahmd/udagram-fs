@@ -7,7 +7,6 @@ orbs:
   # different jobs are calles later in the workflows sections
 jobs: # a collection of steps
   build: # runs not using Workflows must have a `build` job as entry point
-    <<: *defaults
     docker:
       - image: "cimg/base:stable"
     steps: 
