@@ -4,7 +4,7 @@ orbs:
   node: circleci/node@5.0.2
   eb: circleci/aws-elastic-beanstalk@2.0.1
   aws-cli: circleci/aws-cli@3.1.1
-  aws-eb-cli: speakable-org/aws-eb-cli@1.0.1
+  
   # different jobs are calles later in the workflows sections
 jobs:
   build:
@@ -16,6 +16,12 @@ jobs:
       - node/install:
           node-version: '14.15'
       - checkout
+      - run:
+          name: Installing AWS CLI
+          command: |
+            sudo apt-get update
+            sudo apt install python3-pip
+            sudo pip3 install awsebcli --upgrade
       # Use root level package.json to install dependencies in the frontend app
       - run:
           name: Install Front-End Dependencies
