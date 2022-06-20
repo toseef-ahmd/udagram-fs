@@ -16,12 +16,6 @@ jobs:
       - node/install:
           node-version: '14.15'
       - checkout
-      - run:
-          name: Installing AWS CLI
-          command: |
-            sudo apt-get update
-            sudo apt install python3-pip
-            sudo pip3 install awsebcli --upgrade
       # Use root level package.json to install dependencies in the frontend app
       - run:
           name: Install Front-End Dependencies
