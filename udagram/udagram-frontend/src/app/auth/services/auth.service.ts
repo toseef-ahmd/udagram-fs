@@ -7,7 +7,6 @@ import { catchError, tap } from 'rxjs/operators';
 const JWT_LOCALSTORE_KEY = 'jwt';
 const USER_LOCALSTORE_KEY = 'user';
 
-console.log(Base_URL);
 
 @Injectable({
   providedIn: 'root'
