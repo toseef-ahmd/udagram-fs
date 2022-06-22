@@ -1,1 +1,1 @@
-eb setenv POSTGRES_HOST=udagram-db.cchzc2rqkvw8.us-east-1.rds.amazonaws.com POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=postgres POSTGRES_DB=udagram_db
+eb setenv POSTGRES_HOST=udagram-db.cchzc2rqkvw8.us-east-1.rds.amazonaws.com POSTGRES_DB=udagram_db POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=postgres
