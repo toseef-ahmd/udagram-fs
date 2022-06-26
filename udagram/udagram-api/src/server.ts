@@ -22,15 +22,15 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
 
   app.use(bodyParser.json());
 
-  // app.use(cors());
-  // We set the CORS origin to * so that we don't need to
-  // worry about the complexities of CORS. 
-  const corsOptions = {
-    origin: '*',
-    optionsSuccessStatus: 200,
-  }
+  app.use(cors());
+  // // We set the CORS origin to * so that we don't need to
+  // // worry about the complexities of CORS. 
+  // const corsOptions = {
+  //   origin: '*',
+  //   optionsSuccessStatus: 200,
+  // }
   
-  app.use(cors(corsOptions))
+  // app.use(cors(corsOptions))
   app.use(function (req, res, next) {
   
     // Website you wish to allow to connect
@@ -44,7 +44,7 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
     // Pass to next layer of middleware
     next();
   });
-  
+
 
   app.use("/api/v0/", IndexRouter);
 
