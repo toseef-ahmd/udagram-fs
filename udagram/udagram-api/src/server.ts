@@ -29,22 +29,6 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
   //   origin: '*',
   //   optionsSuccessStatus: 200,
   // }
-  
-  // app.use(cors(corsOptions))
-  app.use(function (req, res, next) {
-  
-    // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', '*');
-  
-    // Request methods you wish to allow
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  
-    // Request headers you wish to allow
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    // Pass to next layer of middleware
-    next();
-  });
-
 
   app.use("/api/v0/", IndexRouter);
 
