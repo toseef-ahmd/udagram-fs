@@ -1,1 +1,1 @@
-eb setenv POSTGRES_HOST=aa7vq37ewpfa0m.cchzc2rqkvw8.us-east-1.rds.amazonaws.com POSTGRES_DB=ebdb POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=postgres AWS_BUCKET=udagram-tauseef
+eb setenv POSTGRES_HOST=aa7vq37ewpfa0m.cchzc2rqkvw8.us-east-1.rds.amazonaws.com POSTGRES_DB=ebdb POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=postgres AWS_BUCKET=elasticbeanstalk-us-east-1-000246328708
