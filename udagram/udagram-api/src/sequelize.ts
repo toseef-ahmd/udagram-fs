@@ -6,6 +6,8 @@ console.log(config.database)
 console.log(config.username)
 console.log(config.password)
 
+
+
 export const sequelize = new Sequelize({
   username: config.username,
   password: config.password,
