@@ -8,7 +8,7 @@ export AWS_BUCKET=arn:aws:s3:::udagram-tauseef
 export AWS_REGION=us-east-1
 export AWS_PROFILE=default
 export JWT_SECRET=myjwt-secret
-export URL=http://http://udagram-api-dev2222.us-east-1.elasticbeanstalk.com
+export URL=http://udagram-api-dev2222.us-east-1.elasticbeanstalk.com
 
 # export POSTGRES_USERNAME=postgres
 # export POSTGRES_PASSWORD=postgres
