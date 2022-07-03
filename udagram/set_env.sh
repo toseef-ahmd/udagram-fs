@@ -6,7 +6,7 @@ export POSTGRES_HOST=udagram-db.cchzc2rqkvw8.us-east-1.rds.amazonaws.com
 export POSTGRES_DB=udagram_db
 export AWS_BUCKET=arn:aws:s3:::udagram-tauseef
 export AWS_REGION=us-east-1
-export AWS_PROFILE=eb-cli
+export AWS_PROFILE=default
 export JWT_SECRET=myjwt-secret
 export URL=http://udagram-api-dev2222.us-east-1.elasticbeanstalk.com
 
