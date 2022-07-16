@@ -13,7 +13,6 @@ export const sequelize = new Sequelize({
   password: config.password,
   database: config.database,
   host: config.host,
-  
   dialect: "postgres",
   storage: ":memory:",
 });
