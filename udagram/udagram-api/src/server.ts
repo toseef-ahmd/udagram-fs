@@ -32,13 +32,13 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
   
   app.use(cors(corsOptions))
 
-  const corsOptions = {
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-    allowedHeaders: ["Access-Control-Allow-Origin", "Origin", "X-Requested-With", "Content-Type", "Accept", "Authorization"],
-    credentials: true
-  };
+  // const corsOptions = {
+  //   methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  //   allowedHeaders: ["Access-Control-Allow-Origin", "Origin", "X-Requested-With", "Content-Type", "Accept", "Authorization"],
+  //   credentials: true
+  // };
   
-  app.options('*', cors());
+  app.options('*', cors(corsOptions));
   app.use(cors(corsOptions));
 
   app.use("/api/v0/", IndexRouter);
