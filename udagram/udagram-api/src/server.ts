@@ -23,14 +23,14 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
   app.use(bodyParser.json());
 
   
-  // We set the CORS origin to * so that we don't need to
-  // worry about the complexities of CORS. 
-  // const corsOptions = {
-  //   origin: '*',
-  //   optionsSuccessStatus: 200,
-  // }
+ // We set the CORS origin to * so that we don't need to
+  //worry about the complexities of CORS. 
+  const corsOptions = {
+    origin: '*',
+    optionsSuccessStatus: 200,
+  }
   
-  // app.use(cors(corsOptions))
+  app.use(cors(corsOptions))
 
   const corsOptions = {
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
@@ -38,8 +38,8 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
     credentials: true
   };
   
-  app.options('*', cors(corsOptions));
-  app.use(cors());
+  app.options('*', cors());
+  app.use(cors(corsOptions));
 
   app.use("/api/v0/", IndexRouter);
 
