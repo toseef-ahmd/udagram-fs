@@ -1,8 +1,8 @@
 import * as dotenv from "dotenv";
-import cors from 'cors';
+//import cors from 'cors';
 import express from "express";
 import { sequelize } from "./sequelize";
-
+const cors = require('cors');
 import { IndexRouter } from "./controllers/v0/index.router";
 
 import bodyParser from "body-parser";
