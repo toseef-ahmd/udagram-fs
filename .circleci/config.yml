@@ -64,12 +64,12 @@ jobs:
             npm run frontend:deploy
 workflows:
   udagram:
-    filters:
-      branches:
-        only:
-          - main
     jobs:
       - build
+        filters:
+          branches:
+            only:
+              - main
       - deploy:
           requires:
             - build
