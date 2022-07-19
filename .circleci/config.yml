@@ -8,10 +8,6 @@ orbs:
   # different jobs are calles later in the workflows sections
 jobs:
   build:
-    filters:
-      branches:
-        only:
-          - main
     docker:
       # the base image can run most needed actions with orbs
       - image: 'cimg/node:14.15'
@@ -47,10 +43,6 @@ jobs:
             npm run api:build
   # deploy step will run only after manual approval
   deploy:
-    filters:
-        branches:
-          only:
-            - main
     docker:
       - image: 'cimg/base:stable'
       # more setup needed for aws, node, elastic beanstalk
@@ -72,6 +64,10 @@ jobs:
             npm run frontend:deploy
 workflows:
   udagram:
+  filters:
+      branches:
+        only:
+          - main
     jobs:
       - build
       - deploy:
